@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 url = 'neural-university.ru'
 driver.get("https://www.similarweb.com/ru/website/" + url + "/#overview")
-sleep(20)
+sleep(20)  # bypass site protection
 elems = driver.find_elements(By.CLASS_NAME, "wa-competitors__list-item-title")
 url_list = []
 for elem in elems:
